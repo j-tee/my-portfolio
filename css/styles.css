@@ -9,7 +9,7 @@ body{
     margin: 0;
 }
 .header{
-    background-image: linear-gradient(260deg,#2376ae 0%,#c16ecf 100%);
+    background-image: url(../src/assets/images/header_bg.png);
 }
 a{
     color: white;
