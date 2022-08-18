@@ -1,16 +1,20 @@
 html {
   box-sizing: border-box;
 }
+
 *,*::before,*::after{
   box-sizing: inherit;
 }
+
 body{
   font-family: sans-serif;
   margin: 0;
 }
+
 .header{
-    background-image: url(../src/assets/images/header_bg.png);
+  background-image: url(../src/assets/images/header_bg.png);
 }
+
 a{
     color: white;
     font-weight: 100;
