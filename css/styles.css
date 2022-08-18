@@ -35,7 +35,7 @@ a {
   padding: 50px;
 }
 
-/*flex containers*/
+/* flex containers */
 .container {
   display: flex;
   flex-direction: column;
@@ -52,6 +52,7 @@ a {
 .flex-nav li {
   flex: 1;
 }
+
 .flex-nav .social {
   flex: 1;
 }
