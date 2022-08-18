@@ -2,7 +2,9 @@ html {
   box-sizing: border-box;
 }
 
-*,*::before,*::after{
+*,
+*::before,
+*::after{
   box-sizing: inherit;
 }
 
@@ -16,37 +18,40 @@ body{
 }
 
 a{
-    color: white;
-    font-weight: 100;
-    letter-spacing: 2px;
-    text-decoration: none;
-    padding: 20px 5px;
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    transition: all 0.5s;
+  color: white;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-decoration: none;
+  padding: 20px 5px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  transition: all 0.5s;
 }
+
 .wrapper{
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px;
 }
 
 /*flex containers*/
 .container{
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
+
 .flex-nav ul{
-    border: 1px solid white;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+  border: 1px solid white;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
+
 .flex-nav li{
-    flex: 1;
+  flex: 1;
 }
 .flex-nav .social{
-    flex: 1;
+  flex: 1;
 }
