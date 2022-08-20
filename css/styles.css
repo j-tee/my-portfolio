@@ -169,3 +169,108 @@ button {
   background-color: #6070ff;
   color: #fff;
 }
+
+.langs {
+  list-style: none;
+  padding: 0;
+}
+
+.langs li {
+  list-style: none;
+}
+
+.langs img {
+  margin-right: 1rem;
+}
+
+.lang-items-title {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 1rem 0;
+  line-height: 24px;
+}
+
+.lang-items {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  justify-content: space-between;
+}
+
+.lang-items ul {
+  padding: 0;
+}
+
+.lang-item {
+  padding: 15px;
+  align-items: center;
+  display: flex;
+  background-color: #f7f7f9;
+  font-size: 15px;
+  line-height: 20px;
+  margin-top: 0.9rem;
+  border-radius: 8px;
+}
+
+.wrap-about {
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px;
+  background: white;
+  border-radius: 0 6rem;
+}
+
+select {
+  border: none;
+}
+
+.shape-position {
+  position: absolute;
+  right: 25px;
+}
+
+.contact {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  right: 10px;
+  margin-top: 30px;  
+  padding: 2.5rem;
+}
+
+.input-field {
+  border-radius: 8px;
+  border: 1px solid #CFD8DC;
+  padding: 8px;
+  margin: 5px;
+}
+
+.inputs {
+  width: 100%;
+  height: auto;  
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around
+}
+
+.contact-btn {
+  background-color: #f6f6fa;
+  color: rgb(11, 159, 239);
+  margin: 5px;
+}
+
+.footer-img {
+  position: fixed; 
+	bottom: 0; 
+	left: 0; 
+	right: 0; 
+}
