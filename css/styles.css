@@ -66,13 +66,14 @@ body {
 }
 
 .wrap {
-  margin: .5rem;
+  margin: 0.5rem;
   padding: 1rem;
 }
 
 .wrap ul {
   list-style: none;
 }
+
 .wrap a {
   font-weight: 500;
   line-height: 25px;
@@ -93,7 +94,7 @@ body {
   flex-direction: column;
   padding: 16px;
   gap: 12px;
-  border: 1px solid #DFE1E6;
+  border: 1px solid #dfe1e6;
   border-radius: 16px;
   background-color: #fff;
 }
@@ -151,6 +152,7 @@ body {
   font-size: 14px;
   font-weight: 500;
 }
+
 button {
   display: flex;
   align-items: center;
@@ -240,26 +242,26 @@ select {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  color: #FFFFFF;
+  color: #fff;
   right: 10px;
-  margin-top: 30px;  
+  margin-top: 30px;
   padding: 2.5rem;
 }
 
 .input-field {
   border-radius: 8px;
-  border: 1px solid #CFD8DC;
+  border: 1px solid #cfd8dc;
   padding: 8px;
   margin: 5px;
 }
 
 .inputs {
   width: 100%;
-  height: auto;  
+  height: auto;
   margin-top: 50px;
   display: flex;
   flex-direction: column;
-  justify-content:space-around
+  justify-content: space-around;
 }
 
 .contact-btn {
@@ -269,8 +271,12 @@ select {
 }
 
 .footer-img {
-  position: fixed; 
-	bottom: 0; 
-	left: 0; 
-	right: 0; 
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.underline {
+  border-bottom: inset;
 }
