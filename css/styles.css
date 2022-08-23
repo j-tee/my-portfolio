@@ -237,7 +237,7 @@ select {
 
 .shape-position {
   position: absolute;
-  right: 25px;
+  right: 0.4rem;
 }
 
 .contact {
@@ -248,7 +248,7 @@ select {
   text-align: center;
   color: #fff;
   margin-top: 10px;
-  padding: 1.5rem;
+  padding: 0;
   left: 0;
 }
 
@@ -262,11 +262,25 @@ select {
   padding: 1.5rem;
 }
 
+.contact-form {
+  display: flex;
+  justify-content: space-around;
+}
+
 .input-field {
   border-radius: 8px;
   padding: 8px;
   margin: 5px;
   border: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem;
+  justify-content: space-between;
+  row-gap: 0.5rem;
 }
 
 .inputs {
@@ -288,8 +302,4 @@ select {
 
 .underline {
   border-bottom: inset;
-}
-
-.contact-bg {
-  padding: 0.1rem;
 }
