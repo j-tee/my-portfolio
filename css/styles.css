@@ -106,6 +106,7 @@ body {
   background: white;
   border-radius: 0 6rem;
 }
+
 .work-block p {
   font-weight: 400;
   font-size: 15px;
@@ -247,8 +248,8 @@ select {
   text-align: center;
   color: #fff;
   margin-top: 10px;
-  padding:1.5rem;
-  left:0
+  padding: 1.5rem;
+  left: 0;
 }
 
 .contact-btn {
@@ -257,7 +258,7 @@ select {
   margin: 5px;
 }
 
-contact-text{
+.contact-text {
   padding: 1.5rem;
 }
 
