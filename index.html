@@ -138,10 +138,8 @@
                         <li class="lang-item"><img src="../src/assets/images/Ellipse_css.svg" alt="img">CSS</li>
                     </ul>
                 </li>
-                <li class="lang-items-title underline">Frameworks<span>></span></li>
-                
-                <li class="lang-items-title underline">Skills<span>></span></li>
-                
+                <li class="lang-items-title underline">Frameworks<span>></span></li>                
+                <li class="lang-items-title underline">Skills<span>></span></li>                
             </ul>
         </section>
         <section class="cards">
@@ -153,10 +151,10 @@
                     If you have an application you are interested in developing, a feature that you need built or a
                     project that needs coding. I’d love to help with it
                 </div>
-                <form class="inputs">
-                    <input class="input-field" value="Yeremias" type="text" id="name" name="user_name">
-                    <input class="input-field" value="natanjayanji@gmail.com" type="text" id="mail" name="user_email">
-                    <textarea class="input-field" rows="6" placeholder="Write something nice" id="msg" name="user_message"></textarea>
+                <form action="https://formspree.io/f/xqkjaeyz" method="POST" class="inputs">
+                    <input class="input-field" placeholder="Your name" value="" type="text" id="name" name="user_name" maxlength="30" required>
+                    <input class="input-field" placeholder="Your email" type="email" id="mail" name="user_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                    <textarea class="input-field" rows="6" placeholder="Write something nice" type="text" maxlength="500" id="msg" name="user_message" required></textarea>
                     <button class="contact-btn" type="submit">Get in touch</button>
                 </form>  
                 <div class="footer-img"><img src="./src/assets/images/footer_image.svg"></div>              
