@@ -65,6 +65,25 @@ body {
   list-style: none;
 }
 
+/* flex containers */
+.flex-nav li {
+  flex: 1;
+}
+
+.flex-nav .social {
+  flex: 1;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 5px;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  background-color: #fff;
+}
+
 .wrap {
   margin: 0.5rem;
   padding: 1rem;
@@ -80,25 +99,13 @@ body {
   font-size: 1rem;
 }
 
-/* flex containers */
-.flex-nav li {
-  flex: 1;
-}
-
-.flex-nav .social {
-  flex: 1;
-}
-
-.cards {
+.wrap-about {
   display: flex;
   flex-direction: column;
-  padding: 16px;
-  gap: 12px;
-  border: 1px solid #dfe1e6;
-  border-radius: 16px;
-  background-color: #fff;
+  padding: 0 24px;
+  background: white;
+  border-radius: 0 6rem;
 }
-
 .work-block p {
   font-weight: 400;
   font-size: 15px;
@@ -223,14 +230,6 @@ button:hover {
   border-radius: 8px;
 }
 
-.wrap-about {
-  display: flex;
-  flex-direction: column;
-  padding: 0 24px;
-  background: white;
-  border-radius: 0 6rem;
-}
-
 select {
   border: none;
 }
@@ -247,16 +246,26 @@ select {
   align-items: center;
   text-align: center;
   color: #fff;
-  right: 10px;
-  margin-top: 30px;
-  padding: 2.5rem;
+  margin-top: 10px;
+  padding:1.5rem;
+  left:0
+}
+
+.contact-btn {
+  background-color: #f6f6fa;
+  color: rgb(11, 159, 239);
+  margin: 5px;
+}
+
+contact-text{
+  padding: 1.5rem;
 }
 
 .input-field {
   border-radius: 8px;
   padding: 8px;
   margin: 5px;
-  border: 0 auto;
+  border: 0;
 }
 
 .inputs {
@@ -266,12 +275,7 @@ select {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-}
-
-.contact-btn {
-  background-color: #f6f6fa;
-  color: rgb(11, 159, 239);
-  margin: 5px;
+  padding: 0.5rem;
 }
 
 .footer-img {
@@ -283,12 +287,4 @@ select {
 
 .underline {
   border-bottom: inset;
-}
-
-input:valid {
-  border: 2px solid black;
-}
-
-input:invalid:required {
-  border: 2px solid red;
 }
