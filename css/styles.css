@@ -289,3 +289,7 @@ select {
 .underline {
   border-bottom: inset;
 }
+
+.contact-bg {
+  padding: 0.1rem;
+}
