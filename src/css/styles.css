@@ -66,8 +66,8 @@ a {
 .cards {
   display: flex;
   flex-direction: column;
+  gap: 10px;
   padding: 1rem;
-  gap: 5px;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   background-color: #fff;
@@ -92,12 +92,20 @@ a {
   margin-top: 0.5rem;
 }
 
-.tonic-img {
+.img-block {
   padding-right: 0.5rem;
+  width: 100%;
 }
 
-.tonic-img img {
-  width: 100%;
+.card-img-block {
+  display: flex;
+  padding-right: 0.5rem;
+  flex: 1;
+  flex-direction: column;
+}
+
+.card-img-block img {
+  flex: 1;
   height: auto;
 }
 
@@ -109,17 +117,25 @@ a {
   padding-left: 0;
 }
 
-.work-block p {
+.card-text-block {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  flex: 1;
+  width: 100%;
+}
+
+.card-text-block p {
   font-weight: 400;
   font-size: 15px;
   color: #172b4d;
 }
 
-.work-block h2 {
+.card-text-block h2 {
   font-weight: 700;
   font-size: 2.5rem;
   color: #172b4d;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .card-tags {
@@ -163,9 +179,10 @@ button:hover {
 
 .list-items {
   display: flex;
+  justify-content: start;
   grid-gap: 12px;
   padding: 0;
-  margin: 0 auto;
+  margin-top: 0;
 }
 
 .list-items li {
@@ -181,29 +198,31 @@ button:hover {
   color: #1d2535;
 }
 
-.stories-img {
-  order: 1;
-}
-
-.position-change {
-  order: 2;
-}
-
-.stories-img img {
-  width: 100%;
-  height: auto;
-}
-
 .about-myself {
-  width: 100%;
   display: flex;
+  flex: 1;
   flex-direction: column;
-  justify-content: space-between;
   margin: 1rem;
 }
 
 .about p {
   padding-right: 1.5rem;
+}
+
+.about h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: rgb(14, 1, 1);
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+.about ul {
+  padding-bottom: 2rem;
 }
 
 .about-myself img {
@@ -212,13 +231,21 @@ button:hover {
 }
 
 .about {
-  width: 100%;
+  flex: 1;
   display: flex;
   flex-direction: column;
 }
 
+.contact-btn {
+  background-color: #f6f6fa;
+  color: #6070ff;
+  margin: 5px;
+}
+
 .langs {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .lang-items-title {
@@ -240,10 +267,6 @@ button:hover {
   line-height: 24px;
   justify-content: space-between;
   width: 100%;
-}
-
-ul {
-  padding: 0;
 }
 
 .lang-items ul {
@@ -274,10 +297,75 @@ ul {
   padding-left: 3.5rem;
 }
 
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #fff;
+  margin-top: 8rem;
+}
+
+.contact p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+  padding: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem;
+}
+
+.bg-img {
+  position: absolute;
+  z-index: -2;
+  max-width: 100% !important;
+}
+
+.bg-shapes {
+  position: absolute;
+  z-index: -1;
+  max-width: 100% !important;
+}
+
+.input-field {
+  border-radius: 8px;
+  padding: 8px;
+  margin: 5px;
+  border: 0;
+}
+
+.menu-item {
+  display: none;
+}
+
+.order-2 {
+  order: 2;
+}
+
+.order-1 {
+  order: 1;
+}
+
 @media (min-width: 600px) {
   .lang-item img {
     margin-top: -2rem;
     margin-left: -0.5rem;
+  }
+
+  .menu-item {
+    display: flex;
   }
 
   .lang-item {
@@ -300,24 +388,17 @@ ul {
     line-height: 24px;
   }
 
-  .stories-img {
-    order: 2;
-  }
-
-  .stories {
-    order: 1;
-  }
-
   .cards {
     display: flex;
     flex-direction: row;
     padding: 1rem;
-    gap: 5px;
+    gap: 4rem;
     align-content: center;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
     margin: 5rem;
     background-color: #fff;
+    flex: 1;
   }
 
   .nav-bar {
@@ -353,6 +434,7 @@ ul {
     list-style: none;
     justify-content: space-between;
     width: 20%;
+    padding-bottom: 1rem;
   }
 
   .menu-icon {
@@ -361,6 +443,26 @@ ul {
 
   .about-myself {
     flex-direction: row;
+    flex: 1;
+    gap: 1rem;
     margin: 5rem;
+  }
+
+  form {
+    width: 30%;
+  }
+
+  .contact p {
+    width: 30%;
+  }
+
+  .bg-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .bg-shapes {
+    width: 100%;
+    height: auto;
   }
 }
