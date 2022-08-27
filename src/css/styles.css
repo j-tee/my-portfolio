@@ -330,7 +330,9 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 0;
+  background-color: #6070ff;
+  border-top-left-radius: 100px;
+  box-sizing: border-box;
 }
 
 .contact h2 {
@@ -365,8 +367,8 @@ form {
 
 .bg-shapes {
   position: absolute;
-  z-index: -1;
   max-width: 100% !important;
+  max-height: 80%;
 }
 
 .about-icons li {
