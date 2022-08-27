@@ -124,11 +124,6 @@ a {
   transition-duration: 350ms;
 }
 
-
-.card-img-block img:hover {
-  transform: rotate(360deg);
-}
-
 .icons {
   display: flex;
   list-style: none;
@@ -178,6 +173,7 @@ a {
   padding: 0;
   margin: 0.5rem 0;
 }
+
 .resume-btn {
   display: flex;
   align-items: center;
@@ -424,6 +420,10 @@ form {
   flex-direction: column;
   width: 100%;
   height: auto;
+}
+
+.card-img-block img:hover {
+  transform: rotate(360deg);
 }
 
 .card-btn {
