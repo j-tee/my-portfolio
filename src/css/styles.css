@@ -571,6 +571,7 @@ form {
   }
 
   .contact {
+    display: flex;
     margin: 0;
   }
 
@@ -583,7 +584,7 @@ form {
   }
 
   .bg-img {
-    width: 100%;
+    width: 1440px;
     height: auto;
   }
 
