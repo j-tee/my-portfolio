@@ -335,8 +335,8 @@ ul {
   box-sizing: border-box;
   background-image: url("../assets/images/contact-shapes-bg.svg");
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  background-position: top left;
+  background-size: 100%;
 }
 
 .contact h2 {
