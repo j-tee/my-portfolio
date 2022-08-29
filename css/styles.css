@@ -134,7 +134,7 @@ body {
 
 .card-tags {
   list-style: none;
-  display: flex;
+  /* display: flex; */
   padding: 0;
   margin: 1rem 0;
 }
@@ -143,6 +143,7 @@ body {
   margin-right: 0.5rem;
   padding: 4px 12px;
   border-radius: 8px;
+  float: left;
   display: flex;
   color: #6070ff;
   align-items: center;
