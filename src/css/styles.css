@@ -97,6 +97,14 @@ a {
   letter-spacing: 0.37;
 }
 
+.card-btn {
+  width: max-content;
+  padding: 12px;
+  color: #6070ff;
+  background-color: transparent;
+  margin-top: 20px;
+}
+
 .connect {
   font-weight: 500;
   font-size: 16px;
@@ -181,8 +189,12 @@ button {
   width: max-content;
   padding: 12px;
   color: #6070ff;
+}
+
+.resume-btn {
+  margin-top: 5px;
+  margin-left: 30px;
   background-color: transparent;
-  margin-top: 20px;
 }
 
 button:hover {
@@ -260,9 +272,9 @@ ul {
 }
 
 .contact-btn {
-  background-color: #f6f6fa;
-  color: #6070ff;
-  margin: 5px 20px;
+  margin-top: 5px;
+  margin-left: 5px;
+  background-color: white;
 }
 
 .submit-btn {
@@ -275,7 +287,7 @@ ul {
   display: flex;
   flex-direction: column;
   flex: 1;
-  margin: 0 20px;
+  margin: 10px 20px;
 }
 
 .lang-items-title {
@@ -428,6 +440,11 @@ form {
     grid-template-rows: repeat(4, 1fr);
   }
 
+  .resume-btn {
+    margin-top: 5px;
+    margin-left: 0;
+  }
+
   .order-1 {
     order: 0;
   }
@@ -549,8 +566,6 @@ form {
   }
 
   .contact-btn {
-    background-color: #f6f6fa;
-    color: #6070ff;
     margin-left: 0;
   }
 
@@ -681,17 +696,6 @@ form {
   }
 
   .card-btn {
-    display: flex;
-    align-items: center;
-    box-sizing: border-box;
-    border: 1px solid #6070ff;
-    border-radius: 8px;
-    letter-spacing: 0.03rem;
-    font-size: 17px;
-    width: max-content;
-    padding: 12px;
-    color: #6070ff;
-    background-color: transparent;
     margin-top: 10px;
   }
 }
