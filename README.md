@@ -9,6 +9,9 @@
 - HTML
 - CSS
 
+## Live demo
+[live demo](https://j-tee.github.io/my-portfolio/)
+
 ## Getting Started
 
 To get a local copy for this project and running follow these simple example steps.
