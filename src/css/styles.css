@@ -21,7 +21,7 @@ header {
 }
 
 .logo {
-  color: #6070ff;
+  color: #0617b0;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -88,6 +88,7 @@ a {
 
 .reg-text a {
   margin: 12px 0 14px 0;
+  color: #0617b0;
 }
 
 .h1-text {
@@ -109,7 +110,7 @@ a {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #7f8cff;
+  color: #0617b0;
   margin-left: 24px;
   margin-top: 0.5rem;
   margin-bottom: 0.8rem;
@@ -213,7 +214,7 @@ button:hover {
 .count {
   list-style: none;
   font-weight: 600;
-  color: #1d2535;
+  color: #11192a;
 }
 
 ul .count {
@@ -457,7 +458,7 @@ form {
     padding: 0;
     margin: 5px;
     font-size: 14px;
-    color: #7a869a;
+    color: #172b4d;
   }
 
   .card-tags li {
@@ -465,7 +466,7 @@ form {
     padding: 4px 12px;
     border-radius: 8px;
     display: flex;
-    color: #6070ff;
+    color: blue;
     align-items: center;
     letter-spacing: 0.03rem;
     background-color: #ebebff;
@@ -650,7 +651,7 @@ form {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    color: #7f8cff;
+    color: #0617b0;
     margin-top: 0.5rem;
     margin-left: 0;
     margin-bottom: 0;
