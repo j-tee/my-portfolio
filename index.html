@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Home Page</title>
+
+    <title>My Portfolio Home Page</title>
+
     <link rel="stylesheet" href="./src/css/styles.css" type="text/css" />
   </head>
   <body>
@@ -38,12 +40,12 @@
         </div>
 
         <ul class="icons">
-          <li><img src="./src/assets/images/twitter.svg" alt="Twitter" /></li>
-          <li><img src="./src/assets/images/linkedin.svg" alt="LinkedIn" /></li>
-          <li><img src="./src/assets/images/medium.svg" alt="Medium" /></li>
-          <li><img src="./src/assets/images/github.svg" alt="Github" /></li>
+          <li><img src="./src/assets/images/twitter.svg" alt="follow on twitter" /></li>
+          <li><img src="./src/assets/images/linkedin.svg" alt="connect on linkedIn" /></li>
+          <li><img src="./src/assets/images/medium.svg" alt="connect on medium" /></li>
+          <li><img src="./src/assets/images/github.svg" alt="connect on github" /></li>
           <li>
-            <img src="./src/assets/images/angellist.svg" alt="Angellist" />
+            <img src="./src/assets/images/angellist.svg" alt="connect on angelist" />
           </li>
         </ul>
       </div>
@@ -52,7 +54,7 @@
       <!-- Card 1 -->
       <div class="cards">
         <div class="card-img-block">
-          <img src="./src/assets/images/tonic.svg" alt="tonic" />
+          <img src="./src/assets/images/tonic.svg" alt="tonic project" />
         </div>
         <div class="card-text-block">
           <h2>Tonic</h2>
@@ -76,7 +78,7 @@
       <!-- Card 2 -->
       <div class="cards">
         <div class="card-img-block order-2">
-          <img src="./src/assets/images/stories.svg" alt="tonic" />
+          <img src="./src/assets/images/stories.svg" alt="multi post stories project" />
         </div>
         <div class="card-text-block order-1">
           <h2>Multi-Post Stories</h2>
@@ -101,7 +103,7 @@
       <!-- Card 3 -->
       <div class="cards">
         <div class="card-img-block">
-          <img src="./src/assets/images/facebook.svg" alt="Facebook" />
+          <img src="./src/assets/images/facebook.svg" alt="facebook 360 project" />
         </div>
         <div class="card-text-block">
           <h2>Facebook 360</h2>
@@ -125,7 +127,7 @@
       <!-- Card 4 -->
       <div class="cards">
         <div class="order-2 card-img-block">
-          <img src="./src/assets/images/uber-navigation.svg" alt="tonic" />
+          <img src="./src/assets/images/uber-navigation.svg" alt="uber navigation project" />
         </div>
         <div class="card-text-block order-1">
           <h2>Uber Navigation</h2>
@@ -158,12 +160,12 @@
         </p>
         <div class="connect">LET’S CONNECT</div>
         <ul class="about-icons">
-          <li><img src="./src/assets/images/twitter.svg" alt="Twitter" /></li>
-          <li><img src="./src/assets/images/linkedin.svg" alt="LinkedIn" /></li>
-          <li><img src="./src/assets/images/medium.svg" alt="Medium" /></li>
-          <li><img src="./src/assets/images/github.svg" alt="Github" /></li>
+          <li><img src="./src/assets/images/twitter.svg" alt="follow on twitter" /></li>
+          <li><img src="./src/assets/images/linkedin.svg" alt="connect on linkedin" /></li>
+          <li><img src="./src/assets/images/medium.svg" alt="connect on medium" /></li>
+          <li><img src="./src/assets/images/github.svg" alt="connect on github" /></li>
           <li>
-            <img src="./src/assets/images/angellist.svg" alt="Angellist" />
+            <img src="./src/assets/images/angellist.svg" alt="connect on angelist" />
           </li>
         </ul>
         <button class="resume-btn" type="submit">Get My Resume</button>
@@ -217,6 +219,7 @@
         with it
       </p>
       <form action="https://formspree.io/f/xqkjaeyz" method="POST">
+        <label for="name"></label>
         <input
           class="input-field"
           placeholder="Your name"
@@ -227,6 +230,7 @@
           maxlength="30"
           required
         />
+        <label for="mail"></label>
         <input
           class="input-field"
           placeholder="Your email"
@@ -236,6 +240,7 @@
           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
           required
         />
+        <label for="msg"></label>
         <textarea
           class="input-field"
           rows="6"
