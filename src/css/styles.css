@@ -2,6 +2,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -68,6 +69,15 @@ a {
   z-index: 1000;
   transform: translateX(100%);
   transition: transform 350ms ease-out;
+}
+
+.list-menu .menu-item a{
+  font-size: 1.3rem;
+  color: #0617b0;
+}
+
+.list-menu .menu-item {
+  margin-bottom: 1.2rem;
 }
 
 .list-menu[data-visible="true"]{
