@@ -68,7 +68,7 @@ a {
   z-index: 99999999;
   transform: translateX(100%);
   transition: transform 350ms ease-out;
-  margin-bottom: 0;
+  margin-bottom: 0; 
 }
 
 .reg-text a {
@@ -482,10 +482,66 @@ form {
   background-image: url("../assets/images/close-icon.svg");
 }
 
-/* .about-myself img {
-  position: absolute;
-  z-index: 1;
-} */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200m ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+  width: 500px;
+  max-width: 90%;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.modal-header .modal-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-body {
+  padding: 10px 15px;
+}
+
+#over-lay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  transition: 200m ease-in-out;
+  pointer-events: none;
+}
+
+#over-lay.active {
+  opacity: 1;
+  pointer-events: all;
+}
 
 @media (min-width: 768px) {
   .main-grid {
@@ -615,10 +671,8 @@ form {
 
   .list-menu {
     display: flex;
-    flex-direction: row;
-    margin-top: 2rem;
+    flex-direction: row;    
     margin-right: 154px;
-    height: 100vh;
     color: #6070ff;
     inset: 0 0 0 0;
     background-color: transparent;
