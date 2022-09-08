@@ -17,6 +17,7 @@
           class="menu-toggle"
           aria-expanded="false"
           aria-controls="list-menu"
+          type="button"
         >
           <span class="sr-only">Menu</span>
         </button>
@@ -91,7 +92,14 @@
             <li>css</li>
             <li>javascript</li>
           </ul>
-          <button class="card-btn" type="submit">See Project</button>
+          <button
+            id="tonic"
+            data-modal-target="#modal"
+            class="card-btn"
+            type="submit"
+          >
+            See Project
+          </button>
         </div>
       </div>
       <!-- Card 2 -->
@@ -119,7 +127,14 @@
             <li>css</li>
             <li>javascript</li>
           </ul>
-          <button class="card-btn" type="submit">See Project</button>
+          <button
+            id="stories"
+            data-modal-target="#modal"
+            class="card-btn"
+            type="submit"
+          >
+            See Project
+          </button>
         </div>
       </div>
       <!-- Card 3 -->
@@ -146,7 +161,14 @@
             <li>css</li>
             <li>javascript</li>
           </ul>
-          <button class="card-btn" type="submit">See Project</button>
+          <button
+            id="facebook"
+            data-modal-target="#modal"
+            class="card-btn"
+            type="submit"
+          >
+            See Project
+          </button>
         </div>
       </div>
       <!-- Card 4 -->
@@ -173,7 +195,14 @@
             <li>css</li>
             <li>javascript</li>
           </ul>
-          <button class="card-btn" type="submit">See Project</button>
+          <button
+            id="navigation"
+            data-modal-target="#modal"
+            class="card-btn"
+            type="submit"
+          >
+            See Project
+          </button>
         </div>
       </div>
     </section>
@@ -288,6 +317,10 @@
         <button class="contact-btn" type="submit">Get in touch</button>
       </form>
     </section>
+    <div class="modal" id="modal">      
+    </div>
+    <div id="over-lay"></div>
     <script src="./src/js/navigation.js"></script>
+    <script src="./src/js/modal.js"></script>
   </body>
 </html>

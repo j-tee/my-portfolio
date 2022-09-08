@@ -172,6 +172,47 @@ label {
   margin-left: 10px;
 }
 
+.popup-btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup-btns {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding-top: 1rem;
+  margin: 1rem 2rem 0 2rem;
+  border-top: 1px solid #ebecf0;
+}
+
+.popup-img {
+  margin: 1rem 1.5rem 1rem 1.5rem;
+  max-width: 100%;
+  max-height: 50%;
+}
+
+#popup-tags {
+  margin: 0 1.5rem 0 1.5rem;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.feature {
+  margin: 0 1.5rem 1.5rem 1.5rem;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  flex-grow: 0;
+}
+
+#item-1 {
+  padding-left: 1rem;
+  list-style: none;
+  font-weight: 600;
+  color: #11192a;
+}
+
 .card-tags li {
   margin: 0 12px 0 0;
   padding: 4px 16px;
@@ -482,14 +523,122 @@ form {
   background-image: url("../assets/images/close-icon.svg");
 }
 
-/* .about-myself img {
-  position: absolute;
-  z-index: 1;
-} */
+.modal {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  z-index: 10;
+  background-color: white;
+  max-width: 95%;
+  margin-top: 0;
+  margin-bottom: 5rem;
+}
+
+.popup-btn-tags {
+  padding-bottom: 20px;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 15px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header .modal-title {
+  font-size: 28px;
+  font-weight: 700;
+  padding-left: 10px;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-body {
+  padding: 10px 15px;
+}
+
+#over-lay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 200ms ease-in-out;
+  pointer-events: none;
+}
+
+#over-lay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+#featured {
+  margin-left: 1.5rem;
+}
 
 @media (min-width: 768px) {
   .main-grid {
     grid-template-rows: repeat(4, 1fr);
+  }
+
+  .popup-btn {
+    color: #396df2;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  #popup-tags {
+    margin-left: 0;
+  }
+
+  #featured {
+    margin-left: 1.5rem;
+  }
+
+  .modal {
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 100%;
+    flex-grow: 1;
+  }
+
+  .disp-style {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .disp-style p {
+    width: 60%;
+  }
+
+  .popup-btn-tags {
+    gap: 0.1rem;
+    width: 40%;
+  }
+
+  .popup-btns {
+    gap: 0.5rem;
+    margin-left: 0;
   }
 
   .about-myself img {
@@ -616,9 +765,7 @@ form {
   .list-menu {
     display: flex;
     flex-direction: row;
-    margin-top: 2rem;
     margin-right: 154px;
-    height: 100vh;
     color: #6070ff;
     inset: 0 0 0 0;
     background-color: transparent;
