@@ -14,6 +14,17 @@ const data = {
   msg: '',
 };
 
+window.addEventListener('load', () => {
+  // Retrive the JSON string
+  const jstring = localStorage.getItem('data');
+  // Parse the JSON string back to JS object using JSON
+  const obj = JSON.parse(jstring);
+  // Add input data to input fields
+  txtname.value = obj.name;
+  txtmail.value = obj.email;
+  txtmsg.value = obj.comment;
+});
+
 // eslint-disable-next-line consistent-return
 const myform = document.getElementById('contact-form');
 
