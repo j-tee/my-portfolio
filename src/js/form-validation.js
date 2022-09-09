@@ -3,7 +3,7 @@
 // eslint-disable-next-line linebreak-style
 /* eslint-disable no-useless-escape */
 /* eslint-disable linebreak-style */
-const txtname = document.getElementById('name');
+const name = document.getElementById('name');
 const txtmsg = document.getElementById('msg');
 const txtmail = document.getElementById('mail');
 const filter = /^[a-z]+\@[^\s]+\.[a-z]{2,4}$/;
