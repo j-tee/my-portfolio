@@ -14,14 +14,6 @@ const data = {
   msg: '',
 };
 
-window.addEventListener('load', () => {
-  const info = localStorage.getItem('data');
-  const jsonObj = JSON.parse(info);
-  txtname.value = jsonObj.name;
-  txtmail.value = jsonObj.mail;
-  txtmsg.value = jsonObj.msg;
-});
-
 // eslint-disable-next-line consistent-return
 const myform = document.getElementById('contact-form');
 
