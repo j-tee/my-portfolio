@@ -591,6 +591,20 @@ form {
   pointer-events: all;
 }
 
+.submission-info {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#err-msg {
+  display: flex;
+  font-weight: 500;
+  font-size: 15px;
+  justify-content: center;
+  align-items: center;
+  color: red;
+}
+
 #featured {
   margin-left: 1.5rem;
 }

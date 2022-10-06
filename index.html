@@ -282,7 +282,7 @@
         that you need built or a project that needs coding. I’d love to help
         with it
       </p>
-      <form action="https://formspree.io/f/xqkjaeyz" method="POST">
+      <form id="contact-form" action="https://formspree.io/f/xqkjaeyz" method="POST">
         <label for="name"></label>
         <input
           class="input-field"
@@ -301,7 +301,6 @@
           type="email"
           id="mail"
           name="user_email"
-          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
           required
         />
         <label for="msg"></label>
@@ -314,12 +313,16 @@
           name="user_message"
           required
         ></textarea>
-        <button class="contact-btn" type="submit">Get in touch</button>
+        <div class="submission-info">
+          <button class="contact-btn" type="submit" id="email-btn">
+            Get in touch</button
+          ><span id ="err-msg"></span>
+        </div>
       </form>
     </section>
-    <div class="modal" id="modal">      
-    </div>
+    <div class="modal" id="modal"></div>
     <div id="over-lay"></div>
+    <script src="./src/js/form-validation.js"></script>
     <script src="./src/js/navigation.js"></script>
     <script src="./src/js/modal.js"></script>
   </body>
