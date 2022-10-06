@@ -4,22 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>My Portfolio Home Page</title>
     <link rel="stylesheet" href="./src/css/styles.css" type="text/css" />
   </head>
   <body>
-    <header>
+    <header id="portfolio-section">
       <nav class="nav-bar">
         <ul class="list-logo">
           <li class="logo">My Logo</li>
         </ul>
-        <ul class="list-menu">
-          <li class="menu-icon">
-            <img src="./src/assets/images/menu-icon.svg" alt="menu icon" />
-          </li>
-          <li class="menu-item"><a href="#">Portfolio</a></li>
-          <li class="menu-item"><a href="#">About</a></li>
-          <li class="menu-item"><a href="#">Contact</a></li>
+        <button
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="list-menu"
+          type="button"
+        >
+          <span class="sr-only">Menu</span>
+        </button>
+        <ul id="list-menu" data-visible="false" class="list-menu">
+          <li class="menu-item"><a href="#portfolio-section">Portfolio</a></li>
+          <li class="menu-item"><a href="#about-section">About</a></li>
+          <li class="menu-item"><a href="#contact-section">Contact</a></li>
         </ul>
       </nav>
       <div class="title-text">
@@ -38,12 +43,29 @@
         </div>
 
         <ul class="icons">
-          <li><img src="./src/assets/images/twitter.svg" alt="Twitter" /></li>
-          <li><img src="./src/assets/images/linkedin.svg" alt="LinkedIn" /></li>
-          <li><img src="./src/assets/images/medium.svg" alt="Medium" /></li>
-          <li><img src="./src/assets/images/github.svg" alt="Github" /></li>
           <li>
-            <img src="./src/assets/images/angellist.svg" alt="Angellist" />
+            <img
+              src="./src/assets/images/twitter.svg"
+              alt="follow on twitter"
+            />
+          </li>
+          <li>
+            <img
+              src="./src/assets/images/linkedin.svg"
+              alt="connect on linkedIn"
+            />
+          </li>
+          <li>
+            <img src="./src/assets/images/medium.svg" alt="connect on medium" />
+          </li>
+          <li>
+            <img src="./src/assets/images/github.svg" alt="connect on github" />
+          </li>
+          <li>
+            <img
+              src="./src/assets/images/angellist.svg"
+              alt="connect on angelist"
+            />
           </li>
         </ul>
       </div>
@@ -52,80 +74,108 @@
       <!-- Card 1 -->
       <div class="cards">
         <div class="card-img-block">
-          <img src="./src/assets/images/tonic.svg" alt="tonic" />
+          <img src="./src/assets/images/capstone-1.png" alt="tonic project" />
         </div>
         <div class="card-text-block">
-          <h2>Tonic</h2>
+          <h2>Rinse</h2>
           <ul class="list-items">
             <li class="count">CANOPY</li>
             <li>Back End Dev</li>
             <li>2015</li>
           </ul>
           <p>
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
+            A clening service company that provides both domestic and commercial
+            cleaning services at very affordable rates
           </p>
           <ul class="card-tags">
             <li>html</li>
             <li>css</li>
             <li>javascript</li>
           </ul>
-          <button class="card-btn" type="submit">See Project</button>
+          <button
+            id="tonic"
+            data-modal-target="#modal"
+            class="card-btn"
+            type="submit"
+          >
+            See Project
+          </button>
         </div>
       </div>
       <!-- Card 2 -->
       <div class="cards">
         <div class="card-img-block order-2">
-          <img src="./src/assets/images/stories.svg" alt="tonic" />
+          <img
+            src="./src/assets/images/awesome-book.png"
+            alt="multi post stories project"
+          />
         </div>
         <div class="card-text-block order-1">
-          <h2>Multi-Post Stories</h2>
+          <h2>Awesome Books</h2>
           <ul class="list-items">
             <li class="count">FACEBOOK</li>
             <li>Full Stack Dev</li>
             <li>2015</li>
           </ul>
           <p>
-            Experimental content creation feature that allows users to add to an
-            existing story over the course of a day without spamming their
-            friends.
+            A clening service company that provides both domestic and commercial
+            cleaning services at very affordable rates
           </p>
           <ul class="card-tags">
             <li>html</li>
             <li>css</li>
             <li>javascript</li>
           </ul>
-          <button class="card-btn" type="submit">See Project</button>
+          <button
+            id="stories"
+            data-modal-target="#modal"
+            class="card-btn"
+            type="submit"
+          >
+            See Project
+          </button>
         </div>
       </div>
       <!-- Card 3 -->
       <div class="cards">
         <div class="card-img-block">
-          <img src="./src/assets/images/facebook.svg" alt="Facebook" />
+          <img
+            src="./src/assets/images/todolist.png"
+            alt="facebook 360 project"
+          />
         </div>
         <div class="card-text-block">
-          <h2>Facebook 360</h2>
+          <h2>To DO List 360</h2>
           <ul class="list-items">
             <li class="count">FACEBOOK</li>
             <li>Full Stack Dev</li>
             <li>2015</li>
           </ul>
           <p>
-            Exploring the future of media in Facebook's first Virtual Reality
-            app; a place to discover and enjoy 360 photos and videos on Gear VR.
+            An interesting collection of books that will appeal to your literary apetite
           </p>
           <ul class="card-tags">
             <li>html</li>
             <li>css</li>
             <li>javascript</li>
           </ul>
-          <button class="card-btn" type="submit">See Project</button>
+          <button
+            id="facebook"
+            data-modal-target="#modal"
+            class="card-btn"
+            type="submit"
+          >
+            See Project
+          </button>
         </div>
       </div>
       <!-- Card 4 -->
       <div class="cards">
         <div class="order-2 card-img-block">
-          <img src="./src/assets/images/uber-navigation.svg" alt="tonic" />
+          <img
+            src="./src/assets/images/uber-navigation.svg"
+            alt="uber navigation project"
+          />
         </div>
         <div class="card-text-block order-1">
           <h2>Uber Navigation</h2>
@@ -143,11 +193,18 @@
             <li>css</li>
             <li>javascript</li>
           </ul>
-          <button class="card-btn" type="submit">See Project</button>
+          <button
+            id="navigation"
+            data-modal-target="#modal"
+            class="card-btn"
+            type="submit"
+          >
+            See Project
+          </button>
         </div>
       </div>
     </section>
-    <section class="about-myself">
+    <section class="about-myself" id="about-section">
       <div class="about">
         <h2>About Myself</h2>
         <p>
@@ -158,12 +215,29 @@
         </p>
         <div class="connect">LET’S CONNECT</div>
         <ul class="about-icons">
-          <li><img src="./src/assets/images/twitter.svg" alt="Twitter" /></li>
-          <li><img src="./src/assets/images/linkedin.svg" alt="LinkedIn" /></li>
-          <li><img src="./src/assets/images/medium.svg" alt="Medium" /></li>
-          <li><img src="./src/assets/images/github.svg" alt="Github" /></li>
           <li>
-            <img src="./src/assets/images/angellist.svg" alt="Angellist" />
+            <img
+              src="./src/assets/images/twitter.svg"
+              alt="follow on twitter"
+            />
+          </li>
+          <li>
+            <img
+              src="./src/assets/images/linkedin.svg"
+              alt="connect on linkedin"
+            />
+          </li>
+          <li>
+            <img src="./src/assets/images/medium.svg" alt="connect on medium" />
+          </li>
+          <li>
+            <img src="./src/assets/images/github.svg" alt="connect on github" />
+          </li>
+          <li>
+            <img
+              src="./src/assets/images/angellist.svg"
+              alt="connect on angelist"
+            />
           </li>
         </ul>
         <button class="resume-btn" type="submit">Get My Resume</button>
@@ -199,24 +273,19 @@
         <li class="lang-items-title underline">Skills<span>></span></li>
       </ul>
     </section>
-    <section class="contact">
-      <img
-        class="bg-img"
-        src="./src/assets/images/contact-bg.svg"
-        alt="background image"
-      />
-      <img
-        class="bg-shapes"
-        src="./src/assets/images/contact-shapes-bg.svg"
-        alt="background shapes"
-      />
+    <section class="contact" id="contact-section">
       <h2>Contact me</h2>
       <p>
         If you have an application you are interested in developing, a feature
         that you need built or a project that needs coding. I’d love to help
         with it
       </p>
-      <form action="https://formspree.io/f/xqkjaeyz" method="POST">
+      <form
+        id="contact-form"
+        action="https://formspree.io/f/xqkjaeyz"
+        method="POST"
+      >
+        <label for="name"></label>
         <input
           class="input-field"
           placeholder="Your name"
@@ -227,15 +296,16 @@
           maxlength="30"
           required
         />
+        <label for="mail"></label>
         <input
           class="input-field"
           placeholder="Your email"
           type="email"
           id="mail"
           name="user_email"
-          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
           required
         />
+        <label for="msg"></label>
         <textarea
           class="input-field"
           rows="6"
@@ -245,8 +315,17 @@
           name="user_message"
           required
         ></textarea>
-        <button class="contact-btn" type="submit">Get in touch</button>
+        <div class="submission-info">
+          <button class="contact-btn" type="submit" id="email-btn">
+            Get in touch</button
+          ><span id="err-msg"></span>
+        </div>
       </form>
     </section>
+    <div class="modal" id="modal"></div>
+    <div id="over-lay"></div>
+    <script src="./src/js/form-validation.js"></script>
+    <script src="./src/js/navigation.js"></script>
+    <script src="./src/js/modal.js"></script>
   </body>
 </html>

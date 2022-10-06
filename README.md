@@ -8,6 +8,10 @@
 
 - HTML
 - CSS
+- Javascript
+
+## Live demo
+[live demo](https://j-tee.github.io/my-portfolio/)
 
 ## Getting Started
 
