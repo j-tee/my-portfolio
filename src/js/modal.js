@@ -23,42 +23,42 @@ function listen() {
 const projects = [
   {
     id: 'tonic',
-    name: 'Tonic',
+    name: 'Rinse',
     featured: ['CANOPY', 'Back End Dev', 2015],
     description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo
     reiciendis assumenda, voluptas id autem itaque non laudantium cupiditate
     tempora dolores, deserunt ullam atque aliquam voluptatum. Temporibus
     harum consectetur at rerum!`,
-    image: './src/assets/images/popup-img.svg',
+    image: './src/assets/images/capstone-1.png',
     technologies: ['html', 'javascript', 'css'],
-    demo: 'https://j-tee.github.io',
-    source: 'https://github.com/j-tee/j-tee.github.io',
+    demo: 'https://j-tee.github.io/capstone-1/',
+    source: 'https://github.com/j-tee/capstone-1',
   },
   {
     id: 'stories',
-    name: 'Stories',
+    name: 'Awesome Books',
     featured: ['FACEBOOK', 'Full Stack Dev', 2015],
     description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo
     reiciendis assumenda, voluptas id autem itaque non laudantium cupiditate
     tempora dolores, deserunt ullam atque aliquam voluptatum. Temporibus
     harum consectetur at rerum!`,
-    image: './src/assets/images/stories-1.svg',
+    image: './src/assets/images/awesome-book.png',
     technologies: ['html', 'javascript', 'css'],
-    demo: 'url',
-    source: 'url',
+    demo: 'https://j-tee.github.io/awesome-books-es6/',
+    source: 'https://github.com/j-tee/awesome-books-es6/tree/master',
   },
   {
     id: 'facebook',
-    name: 'Facebook',
+    name: 'To Do List',
     featured: ['FACEBOOK', 'Full Stack Dev', 2015],
     description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo
     reiciendis assumenda, voluptas id autem itaque non laudantium cupiditate
     tempora dolores, deserunt ullam atque aliquam voluptatum. Temporibus
     harum consectetur at rerum!`,
-    image: './src/assets/images/facebook-1.svg',
+    image: './src/assets/images/todolist.png',
     technologies: ['html', 'javascript', 'css'],
-    demo: 'url',
-    source: 'url',
+    demo: 'https://j-tee.github.io/to-do-list/dist/',
+    source: 'https://github.com/j-tee/to-do-list',
   },
   {
     id: 'navigation',
@@ -103,8 +103,8 @@ function openModal(modal, project) {
         
       </ul>
       <div class="popup-btns">
-        <button class="popup-btn"><span>See Live</span>&nbsp;<span><img src="./src/assets/images/live-demo.svg" alt=""></span></button>
-        <button class="popup-btn"><span>See Source</span>&nbsp;<span><img src="./src/assets/images/github_blue.svg" alt=""></span></button>
+        <button id='demo-btn' class="popup-btn"><span>See Live</span>&nbsp;<span><img src="./src/assets/images/live-demo.svg" alt=""></span></button>
+        <button id="source-btn" class="popup-btn"><span>See Source</span>&nbsp;<span><img src="./src/assets/images/github_blue.svg" alt=""></span></button>
       </div>
       </div>
       </div>`;
@@ -121,6 +121,14 @@ function openModal(modal, project) {
     tag.appendChild(li);
   });
   tag.children[0].classList.add('count');
+  const demoBtn = document.getElementById('demo-btn');
+  demoBtn.addEventListener('click', () => {
+    window.open(project.demo);
+  });
+  const srcBtn = document.getElementById('source-btn');
+  srcBtn.addEventListener('click', () => {
+    window.open(project.source);
+  });
 }
 
 openModalButtons.forEach((button) => {
