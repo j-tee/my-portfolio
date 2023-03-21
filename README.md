@@ -11,7 +11,7 @@
 - Javascript
 
 ## Live demo
-[live demo](https://j-tee.github.io/my-portfolio/)
+[live demo](https://datalogique.com/)
 
 ## Getting Started
 
